@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch a sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Etch a sketch</h1>
+        <form>
+            <label for="gridsize" style="padding: 4px;">Enter grid size</label>
+            <div id="input-set-box">
+                <input type="number" placeholder="0" name="gridsize" id="gridsize" min="1" max="100">
+                <button type="submit" id="set-btn">Set</button>
+            </div>
+        </form>
+    </header>
+    <main>
+      <div id="canvas">
+       
+      </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
