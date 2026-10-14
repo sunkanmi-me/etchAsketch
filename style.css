@@ -8,6 +8,14 @@
     font-family:monospace;
 }
 
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #a79494;
+}
+
 
 header {
     display: flex;
@@ -15,7 +23,6 @@ header {
     padding: 1rem;
     width: 100%;
     box-shadow: 5px 5px 10px gray;
-    
 }
 form {
     display: flex;
@@ -26,13 +33,13 @@ form {
 #input-set-box{
     display: flex;
     flex-direction: column;
-
-
+    margin-bottom: 1rem;
 }
 input{
     width: 100%;
     border-radius: 4px;
     padding: 4px;
+    
 }
 
 #set-btn{
@@ -44,4 +51,26 @@ input{
     box-shadow: 5px 5px 10px #c5bfb5,
                 1px 2px 16px #cf1818;
 
+}
+
+
+#canvas {
+    width: 100%;
+    background-color: rgb(177, 174, 169);
+    /* height: 80vh; */
+}
+
+
+/* footer design */
+
+footer{
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+footer a{
+    color: #6f6666;
+    text-decoration: none;
 }
