@@ -3,7 +3,7 @@
     box-sizing: border-box;
     padding: 0;
     background-color: antiquewhite;
-    /* outline: auto; */
+     /* outline: auto; */
     color: brown;
     font-family:monospace;
 }
@@ -13,7 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #a79494;
+    
 }
 
 
@@ -22,8 +22,13 @@ header {
     justify-content: space-between;
     padding: 1rem;
     width: 100%;
-    box-shadow: 5px 5px 10px gray;
+    box-shadow: 5px 5px 10px #8f8c87;
 }
+main {
+    flex: 1 1 auto;
+    margin: 1rem 0rem;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -39,17 +44,19 @@ input{
     width: 100%;
     border-radius: 4px;
     padding: 4px;
+    border-style: dashed;
     
 }
 
 #set-btn{
     border-radius: 10px;
     margin-top: 8px;
-    padding: 4px;
-    background-color: beige;
-    border: none;
+    padding: 8px;
+    background-color:#6f6666;
+    color:aliceblue;
     box-shadow: 5px 5px 10px #c5bfb5,
                 1px 2px 16px #cf1818;
+    border: none;
 
 }
 
@@ -57,9 +64,25 @@ input{
 #canvas {
     width: 100%;
     background-color: rgb(177, 174, 169);
-    /* height: 80vh; */
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    padding: 0.2rem;
+    box-shadow: 5px 5px 10px #8f8c87;
 }
 
+.div-row {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.pixel-div{
+    flex: 1 1 auto;
+    background-color: aliceblue;
+    border-style:solid;
+    border-color:rgb(206, 223, 231);
+    border-width: 1px;
+}
 
 /* footer design */
 
