@@ -5,9 +5,9 @@ const gridSizeEl = document.querySelector("#gridsize");
 
 //listen to the setbutton then implement the grid
 setBtn.addEventListener('click', (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     const size = gridSizeEl.value;
-    gridSizeEl.value = 0;
+    gridSizeEl.value = Number;
     if (size > 0 && size <= 100){
         console.log("size =>" + size);
         let i = 0;
@@ -22,14 +22,28 @@ setBtn.addEventListener('click', (e) => {
     }
 
 
+    canvasGrid.addEventListener('mouseover', (e) => {
+    const color = getRandomColor();
+    e.target.style.borderColor = color;
+    e.target.style.backgroundColor = color;
+    });
+
 });
 
-//create the mouseover effect to change color when you hover over a pixel
+
+
 
 
 
 function createDivRow(divRowLenght){
 // this function takes a x create a div parent and input an x amount of div horizontally inside the parent then append it to our canva
+
+
+    // handle invalid divrowLenght,making sure it cap at 100 incase the user call the function from the console
+    if (divRowLenght < 0 || divRowLenght > 100){
+        alert("Dont play smart i caught you");
+        return null;
+    }
 
     //create the parentrow div
     const divRow = document.createElement("div");
@@ -45,4 +59,15 @@ function createDivRow(divRowLenght){
 
     canvasGrid.appendChild(divRow);
 
+}
+
+
+
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
 }

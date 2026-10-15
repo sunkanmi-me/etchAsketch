@@ -24,9 +24,13 @@ header {
     width: 100%;
     box-shadow: 5px 5px 10px #8f8c87;
 }
+h1{
+    font-size: large;
+}
 main {
     flex: 1 1 auto;
-    margin: 1rem 0rem;
+    margin: 1rem 0;
+    padding: 0 1rem;
 }
 
 form {
@@ -63,11 +67,10 @@ input{
 
 #canvas {
     width: 100%;
-    background-color: rgb(177, 174, 169);
+    background-color: rgb(189, 187, 182);
     height: 100%; 
     display: flex;
     flex-direction: column;
-    padding: 0.2rem;
     box-shadow: 5px 5px 10px #8f8c87;
 }
 
@@ -96,4 +99,12 @@ footer{
 footer a{
     color: #6f6666;
     text-decoration: none;
+}
+
+
+
+/* pixel colors*/
+.black {
+    background-color: black;
+    border-color: black;
 }
